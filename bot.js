@@ -6,22 +6,22 @@ client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!developers.includes(message.author.id)) return;
 
-if (message.content.startsWith('Swt')) {
+if (message.content.startsWith('Dwt')) {
 client.user.setActivity(argresult, {type:'WATCHING'});
   client.user.setStatus("Idle")
     message.channel.send(` ** Done. :white_check_mark: ** `)
 } else 
-if (message.content.startsWith('Sls')) {
+if (message.content.startsWith('Dls')) {
 client.user.setActivity(argresult , {type:'LISTENING'});
   client.user.setStatus("idle")
     message.channel.send(` ** Done. :white_check_mark: ** `)
 } else 
-if (message.content.startsWith('Sst')) {
+if (message.content.startsWith('Dst')) {
   client.user.setGame(argresult, "https://www.twitch.tv/iitxbro");
   client.user.setStatus("idle")
    message.channel.send(` ** Done. :white_check_mark: ** `)
 } else
-if (message.content.startsWith('Spl')) {
+if (message.content.startsWith('Dpl')) {
 client.user.setActivity(argresult , {type:'PLAYING'});
   client.user.setStatus("idle")
     message.channel.send(` ** Done. :white_check_mark: ** `)
